@@ -1,2 +1,2 @@
 # Coco-Loco-Designs 5
- CCAC
+ CCAC Project: Coco Loco Designs Store
