@@ -1,0 +1,352 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<!--
+documentation segment
+website:Coco Loco Designs
+web page:index.htm
+author:rennhoff
+date created: September.2019
+-->
+	
+<head>
+<meta charset="utf-8">
+<title>Coco Loco Designs</title>
+	
+<style type="text/css">
+	
+#wrapper
+	{
+		width: 1200px;
+		margin: 0 auto;
+	}
+
+body {
+		background-color:#000000;
+		
+	}
+	
+#master
+	{
+		postion: absolute;
+		padding: 0px;
+		border: 1px solid #000;
+		background-color: #fff;
+		width: 1200px;
+		height: 1500px;
+		top: 10px
+	}
+
+#header
+	{
+		postion: absolute;
+		padding: 0px;
+		border: 1px solid #000;
+		justify-content:center;
+		align-items:center;
+		display: flex;
+		width: 1198px;
+		height: 360px;
+		top: 50px
+			
+	}
+	
+	
+	#navigation
+	{
+
+		position: absolute;
+		padding: 10px;
+		border: 0px solid #000;
+		width: 1179px;
+		height: 105px;
+		top: 9px;
+		float: left;
+		
+	}
+
+#title_box
+	{
+		
+		position: absolute;
+		padding: 5px;
+		border: 0px solid #000;
+		width: 400px;
+		height: 25px;
+		top: 70px;
+		float: left;
+		
+		
+	}
+	
+#contents_left
+	{
+		postion: absolute;
+		padding: 10px;
+		border: 1px solid #000;
+		background-color: #fff;
+		width: 48.15%;
+		height: 1135px;
+		top: 265px;
+		float: left;
+	}
+		
+#contents_right
+	{
+		postion: absolute;
+		padding: 10px;
+		border: 1px solid #000;
+		background-color: #fff;
+		width: 48.15%;
+		height: 1135px;
+		top: 265px;
+		float:right;
+		
+	}
+	
+#footer_left
+	{
+		postion: absolute;
+		padding: 10px;
+		border: 0px solid #000;
+		background-color: #F80447;
+		width: 200px;
+		height: 200px;
+		top: 1085px;
+		float: left
+	}
+
+#footer_center
+	{
+		postion: absolute;
+		padding: 10px;
+		border: 0px solid #000;
+		background-color: #F80447;
+		width: 800px;
+		height: 200px;
+		top: 1085px;
+		float: left
+	}
+	
+#footer_right
+	{
+		postion: absolute;
+		padding: 10px;
+		border: 0px solid #000;
+		background-color: #F80447;
+		width: 140px;
+		height: 200px;
+		top: 1085px;
+		float:right;
+	}
+	
+a
+	{
+		font-family:Trebuchet MS;
+		font-size:1em;
+		margin:1em;
+		font-weight:900;
+		text-decoration:none
+	}
+	
+a:link, a:visited, a:active
+	{
+		color:#000090;
+	}
+	
+p
+	{
+		font-family:Trebuchet MS, Helvetica, sans-serif;
+		font-size:1em;
+		font-style:normal;
+		font-weight:500;
+		text-align:left;
+		background:#fff;
+		color:#000;
+	}
+	
+	button 
+	{
+		font-family:Trebuchet MS, Helvetica, sans-serif; <br>
+		font-size: 3em;
+		font-weight:900;
+		background-color:#000;
+		color:#fff; 
+		width:150px;
+		height: 30px;
+		text-decoration:none
+	}
+	
+
+	input.clock
+{
+	font-family:Trebuchet MS, Helvetica, sans-serif;
+	font-size:18pt;
+	font-style:normal;
+	font-weight:900;
+	text-align:center;
+	background:#000080;
+	color:#fff;
+}
+	
+	</style>
+		
+		<script language="JavaScript" type="text/javascript">
+<!--
+
+function startclock()
+{
+	stopclock();
+	showtime();
+}
+
+var timerID = null;
+var timerRunning = false;
+function stopclock()
+{
+	if (timerRunning)
+		clearTimeout(timerID);
+	timerRunning = false;
+}
+
+function showtime()
+{
+	var now = new Date();
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
+	var seconds = now.getSeconds();
+	var timeValue = " " + ((hours >12) ? hours -12 :hours);
+	timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+	timeValue += ((seconds <10) ? ":0" : ":") + seconds;
+	timeValue += (hours >= 12) ? " PM" : " AM";
+	document.clock.face.value = timeValue;
+	timerID = setTimeout("showtime()",1000);
+	timerRunning = true;
+}
+	
+	-->
+	function validateForm() {
+  var x = document.forms["myForm1"]["gname"].value;
+  if (x == "") {
+    alert("Please fill out form");
+    return false;
+  }
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+</head>
+<body onload="startclock(), scrollText( ), init();">
+<body>
+
+	
+	<div id="wrapper"><!--wrapper-->
+	
+	<div id="master"><!--master-->
+	
+	<div id="header"><!--header-->
+		
+	<div id="navigation"><!--navigation-->
+		<div align="left">
+			
+		<button onClick="window.location='#'">Home</button>	
+		<button onClick="window.location='../Coco Loco Designs/index_files/gallery.htm'">Gallery</button><button onClick="window.location='../Coco Loco Designs/index_files/forsalepets.htm'">For Sale: Pets</button>	
+		<button onClick="window.location='../Coco Loco Designs/index_files/forsalemisc.htm'">For Sale: Misc</button>
+		<button onClick="window.location='../Coco Loco Designs/index_files/orders.htm'">Order Placement</button>
+			
+		</div>
+		
+	</div><!--end navigation-->	
+	
+	<div id="title_box"><!--title_box-->
+			
+		
+		
+	</div><!--end title_box-->	
+
+		<img src="../Coco Loco Designs/index_files/images/NEW banner 1.1.16.jpg" width="1197" height="360" vspace="200" hspace="0"/>	
+		
+	</div><!--end header-->		
+		
+		
+	<div id="contents_left"><!--contents_left-->
+	
+	<img src="../Coco Loco Designs/index_files/images/FB profile photo.jpg" width="370" height="370" vspace="0" hspace="100" />	
+		
+	<p>Based out of Pittsburgh, Pennsylvania, and shipping nation-wide, we offer customizable recreations of your furry loved ones or favorite Pop Culture characters, using layered scrapbook paper and mounted on fabric backgrounds.</p>
+			
+	<video width="100%" height="320" video controls autoplay loop muted />
+	<source src="../Coco Loco Designs v2/index_files/video/y2mate.com - burning_love_featuring_coco_-bZn-orZPhM_240p.mp4"/>	
+	</video><br/>	
+
+	<p>Get to know the girl behind the name! Coco is a 10 year old French Bulldog from Queens, New York. She loves naps, cheese, and whatever you happen to be eating.</p>
+		
+	<p>Her personality and striking good looks inspired her owner to make several portraits of her. It caught the eye of several admirers and thus a company was born.</p>
+
+	<p id="demo"><div align="center" style="font-family:Trebuchet MS; font-size:1.5em; color:#e3182b; font-weight:bold">Join Our Mailing List</div></p>
+
+	<script>
+	$(document).ready(function() {
+  	var myElement = $("#demo");
+  	myElement.css("font-size","35px");
+	});
+	</script>	
+		
+	<p>Join our mailing list to stay up to date on sales and special Holiday offers.</p>
+		
+	<form name="myForm1" action="file:///D:/DemoLocalSite/includeData.php" onsubmit="return validateForm()" method="post">	
+	Email Address: <input type="text" name="gname"><br/><br/>
+  	<input type="submit" value="Submit">	
+	</form>	
+
+	</div><!--end contents_left-->
+		
+	<div id="contents_right"><!--contents_right-->
+	
+	<img src="../Coco Loco Designs/index_files/images/10603291_1526918767525134_3720138668398158378_n.jpg" width="270" height="320" vspace="0" hspace="0"/><img src="../Coco Loco Designs/index_files/images/IMG_2044.jpg" width="270" height="320" vspace="0" hspace="0"/><div align="center" style="font-family:Trebuchet MS; font-size:1.5em; color:#e3182b; font-weight:bold">Gallery</div><br/>	
+		
+	<p>Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Id donec ultrices tincidunt arcu non sodales neque. Amet dictum sit amet justo donec enim diam. Commodo ullamcorper a lacus vestibulum sed arcu non.</p><br/>
+		
+	<img src="../Coco Loco Designs/index_files/images/IMG_1004.jpg" width="270" height="320" vspace="0" hspace="0"/><img src="../Coco Loco Designs/index_files/images/IMG_0247.jpg" width="270" height="320" vspace="0" hspace="0"/>	
+	<div align="center" style="font-family:Trebuchet MS; font-size:1.5em; color:#e3182b; font-weight:bold">For Sale</div><br/>		
+		
+	<p>Nunc scelerisque viverra mauris in aliquam sem. Fusce ut placerat orci nulla pellentesque dignissim enim. Pellentesque elit eget gravida cum sociis natoque penatibus et. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Nunc sed velit dignissim sodales ut.</p><br/>	
+		
+	<div align="center" style="font-family:Trebuchet MS; font-size:1.5em; color:#e3182b; font-weight:bold">Custom Orders</div><br/>
+	
+	<p>Eget velit aliquet sagittis id consectetur purus ut. Convallis convallis tellus id interdum velit laoreet id donec ultrices. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. </p>	
+	</div><!--end contents_right-->
+		
+		
+	<div id="footer_left"><!--footer_left-->
+	
+		<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="https://www.facebook.com/cocolocodesigns412/">Facebook</a><br/>
+		<a style="font-family:Trebuchet MS; font-size:.9em; color: #e0e0e0" href="https://www.instagram.com/mister_coco/?hl=en">Instagram</a><br/>
+		<br/>
+		
+
+		<form name="clock" onSubmit="0">
+			<input class="clock" type="text" name="face" size="10">
+			</form>
+
+	</div><!--end footer_left-->
+	
+	<div id="footer_center"><!--footer_center-->	
+		
+	</div><!--footer_center-->
+		
+	<div id="footer_right" align="right"><!--footer_right-->
+	
+		<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="#">Home</a><br/>
+		<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="index_files/gallery.htm">Gallery</a><br/>
+		<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="../Coco Loco Designs/index_files/forsalepets.htm">For Sale: Pets</a><br/>
+		<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="../Coco Loco Designs/index_files/forsalemisc.htm">For Sale: Misc</a><br/>
+		<a style="font-family:Trebuchet MS; font-size:.9em; color:#e0e0e0" href="../Coco Loco Designs/index_files/orders.htm">Place Order</a><br/>
+		
+	</div><!--end footer_right-->
+		
+		
+	</div><!--end master-->
+	</div><!--end wrapper-->
+	
+</body>
+</html>
